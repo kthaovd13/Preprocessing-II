@@ -168,6 +168,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+header .navigate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+header .navigate nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  width: 300px;
+  font-weight: bold;
+}
+header .navigate nav a {
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
