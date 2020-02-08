@@ -260,3 +260,14 @@ header .navigate nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  background-color: #0a7a7a;
+  border: 1px solid #0a7a7a;
+  border-radius: 1rem;
+  width: 84%;
+  padding: 10px;
+}
