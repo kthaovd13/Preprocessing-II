@@ -1,22 +1,11 @@
 header {
-  @media (max-width: 500px){
+  @media @mobile {
     display: flex;
     flex-direction: column;
-    //justify-content: space-around;
     align-items: center;
 
     .navigate {
-      //display: flex;
-      //justify-content: space-evenly;
       margin-top: 20px;
-
-      nav {
-
-        a {
-        display: flex;
-        justify-content: space-around;
-        }
-      }
     }
   }
 }//header
@@ -31,7 +20,7 @@ header {
       margin-top: 30px;
     }
 
-    @media (max-width: 500px){
+    @media @mobile {
       border-bottom: 1.5px dashed @navigation-border;
       margin-left: 20px;
       margin-right: 20px;
@@ -44,10 +33,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (max-width: 500px){
+    @media @mobile {
       display: flex;
       flex-direction: column;
-      //border-bottom: 1.5px dashed @navigation-border;
       padding: 10px;
       margin: 10px;
       }
@@ -58,7 +46,7 @@ header {
       width: 48%;
       padding-right: 1%;
 
-      @media (max-width: 500px){
+      @media @mobile {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -67,7 +55,12 @@ header {
 
     .img-content {
       width: 48%;
-      padding-left: 1%;;
+      padding-left: 1%;
+      padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+    }
 
       img {
         border-radius: 10px;
@@ -78,9 +71,9 @@ header {
     padding-bottom: 10px;
     border-bottom: 2px dashed @navigation-border;
 
-    @media (max-width: 500px){
+    @media @mobile {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
 
     .text-content {
@@ -89,8 +82,13 @@ header {
     }
 
     .img-content {
+      width: 48%;
       padding-right: 1%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        }
       }
     }
   }//inverse-content
@@ -98,6 +96,12 @@ header {
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+      }
 
     img {
       border-radius: 10px;
@@ -110,12 +114,28 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin: 10px;
+      }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 80%;
+        }
+
       .btn {
         .buttons(center, center);
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }//content-pick
